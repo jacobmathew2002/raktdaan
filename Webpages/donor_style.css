@@ -1,0 +1,378 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color:#c91d29fa;
+
+}
+
+
+.logo{
+	position:relative;
+	height:100px;
+	width:120px;
+	border-radius:10px;
+	bottom:600px;
+	right:200px;
+}
+
+.container{
+  max-width: 700px;
+  padding: 25px 30px;
+  width: 100%;
+  background-color:#3333336e;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  color:white;
+  
+  
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+ text-align:center;
+ font-weight:bold;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+   align-items:center;
+   bottom:0;
+  height: 2.4px;
+  width:230px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+
+
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  color:grey;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0;
+   transition: all 235ms ease-in-out;
+ }
+ 
+ form .button:hover{
+   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+   transform: translate3d(0, 2px, 0);
+ }
+ 
+ form .button:focus{
+	box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+ }
+ 
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: black;
+   font-size: 23px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background-color:#ffd300;
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background:#ffd300cf;
+  letter-spacing:2px;
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+
+main .gen{
+	width: 300px;
+	height: 40px;
+	border:4px solid balck;
+	outline: none;
+	padding-left:40px;
+	box-sizing: border;
+	font-size: 15px;
+	color: #333;
+	margin-top:25px;
+	
+}
+.cbox {
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  
+}
+
+lc{
+	font-size:15px;
+}
+
+
+/* Hide the default checkbox */
+.cbox input {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: lightgray;
+}
+
+.cbox:hover input ~ .mark {
+  background-color: gray;
+}
+
+.cbox input:checked ~ .mark {
+  background-color: blue;
+}
+
+/* Create the mark/indicator (hidden when not checked) */
+.mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the mark when checked */
+.cbox input:checked ~ .mark:after {
+  display: block;
+}
+
+/* Style the mark/indicator */
+.cbox .mark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.cbox1{
+	display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cbox2{
+	display: flex;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+
+
+/*Navigation Bar*/
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .logo1 {
+  width: 10%;
+  text-align: center;
+}
+
+nav .menu {
+  width: 88%;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+nav .menu a {
+  width: 80%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align:center;
+  font-family:Acme;
+  font-size:120%;
+  transition: all 235ms ease-in-out;
+}
+
+nav .menu a:hover{
+  color: white;
+  background-color:#2d0a089c;
+  border-radius:10px;
+  padding:15px;
+  
+  
+}
+
+
+header  {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+.dropdown {
+  width:100%;
+  position: relative;
+  display: inline-block;
+  min-width:150px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2d0a089c;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius:15px;
+  top:40px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding:20px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+
+.dropdown-content a:hover {
+	background-color:red;
+	width:100%;
+	}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+    width:100%;
+	
+	}
+	
+	
+.lc{
+	padding-top:15px;
+	margin-bottom:30px;
+}
+	

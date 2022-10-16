@@ -1,0 +1,567 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header  {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  width: 10%;
+  text-align: center;
+}
+
+nav .menu {
+  width: 88%;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+nav .menu a {
+  width: 80%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align:center;
+  font-family:Acme;
+  font-size:120%;
+  transition: all 235ms ease-in-out;
+}
+
+nav .menu a:hover{
+  color: white;
+  background-color:#2d0a089c;
+  border-radius:10px;
+  padding:15px; 
+}
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+
+
+section .btnone {
+  background: #913d39f0;
+  color: white;
+}
+
+.btnone:hover {
+  background: #a98771cf;
+  color: #000;
+  letter-spacing:1.5px;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 25s infinite linear;
+  color: #e8983f;
+}
+
+@keyframes changetext {
+  0% {
+    content: "3 Teaspoon of Blood can save a baby's life";
+  }
+  15% {
+    content: "1 Pint of blood can save upto 3 lives";
+  }
+  30% {
+    content: "Every 2 seconds, someone needs blood";
+  }
+  50% {
+    content: "Adults have around 10 pints of blood in their body. 1 pint is given during a donation";
+  }
+  80% {
+    content: "Don't hesitate to Save Life...";
+  }
+  100% {
+    content: "Donate Blood, Save Life";
+  }
+}
+
+
+.dropdown {
+  width:100%;
+  position: relative;
+  display: inline-block;
+  min-width:150px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2d0a089c;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius:15px;
+  top:40px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding:20px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+
+.dropdown-content a:hover {
+	background-color:red;
+	width:100%;
+	}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+    width:100%;
+	}
+	
+	
+	
+	
+/*Marquee Timeline*/
+
+
+marquee {
+  background: Crimson;
+  margin: 30px auto;
+  display: block;
+  color: black;
+  text-align:center;
+  justify-content:center;
+  line-height:1.5;
+  letter-spacing:2px;
+  border-radius:14px;
+  border:3px solid black;
+  transition:all 1s ease-in-out;
+  font-weight:bold;
+}	
+
+.marquee-up li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding-bottom:10px;
+  
+}
+
+.marquee-up li:hover {	
+	transform:scale(1.01);
+}
+	
+	
+	
+	
+	
+/*User Profile Page*/
+td,th,table {
+background:#c32b2aed;
+}
+.user_container {
+	width:100%;
+	margin:auto;
+	border-radius:20px;
+	background-color: #be1a1a8f;
+	box-shadow: 0 0 1px #333;
+	transition:all 0.3s ease-in-out;
+}
+
+.user_main{
+	text-align: center;
+	
+}
+
+table{
+border-radius:20px;
+}
+
+.main input,button{
+	width: 300px;
+	height: 40px;
+	border:4px solid balck;
+	outline: none;
+	padding-left:40px;
+	box-sizing: border;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 40px;
+	border-radius:24px;
+}
+
+.main button {
+	padding-left: 0;
+	background-color: #f4d6a6;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+
+
+.main button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: Crimson;
+}
+
+.signout{
+	background: #562725f0;
+    color:#dcd6d2cf;
+	transition: all 235ms ease-in-out;
+	cursor:pointer;
+}
+/*
+.signout:hover {
+  background: #a98771cf;
+  color: #000;
+  transition: all 0.4s ease;
+} */
+.signout:hover {
+	background: #a98771cf;
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.signout:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+
+
+/* Timeline Section in Homepage */
+
+#tmline {
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  text-align: center;
+	  color: white;
+}
+
+#tmline .tm_left{
+	align-items:right;
+	width:50%;
+	height:100%;
+	padding-top:100px;
+}
+
+#tmline .tm_right{
+	align-items:left;
+	width:50%;
+	height:70%;
+	padding-top:20%;
+}
+
+#tmline .modalButton {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+  background: Crimson;
+  color: white;
+  width: 70%;
+  cursor:pointer;
+}
+
+#tmline .modalButton:hover {
+	background: #af0001;
+	color: white;
+	letter-spacing:2px;
+}
+.modal{	
+    z-index:3;
+	display:none;
+	padding-top:130px;
+	position:fixed;
+	left:0;top:0;
+	width:100%;
+	height:90%;
+	overflow:auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.animate-zoom{
+	animation: animatezoom 0.8s;
+}
+@keyframes animatezoom{
+from{transform:scale(0)}
+to{transform:scale(1)}
+}
+
+.modal-content{
+	margin:auto;
+	background-color:#c6202ce6;
+	position:relative;
+	padding:0;
+	outline:0;
+	width:600px;
+	border-radius:10px;
+	border:2.5px solid black;
+}
+.display-topright{
+	position:absolute;
+	right:0;
+	top:0
+}
+.close {
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+	transition: transform 0.4s;
+	}
+.close:hover{
+	transform: scale(1.5);
+}
+.modal_head {
+	height:40px;
+	padding-top:10px;
+}
+
+
+
+
+/*About Section*/
+#abt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background:#000000d4;
+}
+
+#abt .abt_left {
+	align-items:right;
+	width:40%;
+	height:70%;
+	padding-top:20px;
+}
+
+#abt .abt_center {
+	align-items:center;
+	width:20%;
+	height:70%;
+	padding-top:20%;
+}
+
+#abt .abt_right {
+	align-items:left;
+	width:30%;
+	height:70%;
+	padding-top:20px;
+}
+
+#abt .dntbtn {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+  cursor:pointer;
+  background: Crimson;
+  color: white;
+}
+
+#abt .dntbtn:hover {
+	background: #af0001;
+	color: white;
+	letter-spacing:2px;
+}
+	
+	
+	
+	
+	
+
+
+/*Contact Form*/
+.gen:hover {
+	
+	min-width:200px;
+	letter-spacing:0.5px;
+	cursor:pointer;
+	transition: all 0.4s ease;
+	}
+
+/* Show the dropdown menu on hover */
+.gen:hover .gen1 {
+	display: block;
+    min-width:200px;
+	}
+	
+	main .gen{
+	width: 400px;
+	height: 40px;
+	border:2px solid black;
+	outline: none;
+	padding-right:40px;
+	box-sizing: border;
+	font-size: 15px;
+	color: #333;
+	border-radius:10px;
+}
+.button{
+   height: 45px;
+   margin: 25px;
+
+ }
+
+ .container{
+    width:100%;
+ }
+ 
+ .contact{
+	width:100%;
+ }
+ /*Contact Form--Table CSS*/
+ .tble {
+	position: relative;
+	align-items:center;
+	margin:auto;
+	width:100%;
+}
+
+.contb, .tble{
+	width: 100%;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	border-radius:10px;
+}
+
+.con, .contd {
+	padding: 15px;
+}
+
+.con {
+	text-align: left;
+	background:#000000d4;
+	color: #fff;
+}
+.contd {
+	color: #fff;
+}
+
+.button-35 {
+  align-items: center;
+  background-color: #eb3d3cd9;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .3s,-webkit-box-shadow .3s,all 235ms ease-in-out;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  height:80%;
+}
+
+.button-35:hover {
+  box-shadow: #121212bf 0 0 0 3px, transparent 0 0 0 0;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-35:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.user_container:hover{
+	
+	box-shadow: rgba(0, 0, 0, .5) 2px 8px 8px -5px;
+    transform: scale(1.015);
+}
+.user_container:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}

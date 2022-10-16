@@ -1,0 +1,115 @@
+body{
+		font-family:sans-serif;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05)),url('images/login2.jpg');
+		background-repeat: no repeat;
+		overflow:hidden;
+		background-size: cover;
+
+}
+
+.container {
+	width:380px;
+	margin:auto;
+	border-radius:25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 1px #333;	
+}
+
+.header{
+	text-align: center;
+	padding-top:0px;
+	
+}
+.headert h1{
+	color: #333;
+	font-size: 45px;
+	margin-bottom: 80px;
+	
+}
+.main{
+	text-align: center;
+}
+.main input,button{
+	width: 300px;
+	height: 40px;
+	border:4px solid balck;
+	outline: none;
+	padding-left:40px;
+	box-sizing: border;
+	font-size: 15px;
+	color: #333;
+	border-radius:15px;
+	margin-bottom: 40px;
+}
+
+input{
+	border:2px solid black;
+}
+
+::placeholder{
+	font-size:15px;
+	color:grey;
+}
+
+.main button {
+	padding-left: 0;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 70px;
+	background: #dfa64a;
+	transition: all 0.3s ease;
+}
+
+
+a{
+  text-decoration:none;
+  font-size:1.2rem;
+}
+
+a:hover{
+ color:#643fa7;
+}
+
+.main button:hover {
+	box-shadow: 2px 2px 5px #560404b5;
+	background: #dfa64a;
+	letter-spacing:1.5px;
+	transform: translate3d(0, 2px, 0);
+}
+.main input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+}
+
+.main span {
+	position: relative;
+}
+
+.main i {							/*View/Hide Password*/
+	position: absolute;
+	right: 8px;
+	color: #504d4de0;
+	font-size: 20px;
+	top: -4px;
+	color:grey;
+	transition:0.15s all ease-in-out;
+}
+
+.main i:hover{
+	transform: scale(1.1);
+	
+	cursor:pointer;
+}
+
+/*Extra*/
+.logo{
+	padding-top:10px;
+	align-items:center;
+	width: 50%;
+	height: 50%;
+	padding-left:32%;
+}
+
+
+
+
